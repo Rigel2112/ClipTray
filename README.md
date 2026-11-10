@@ -4,7 +4,7 @@ Tiny Windows tray application for copying canned text snippets to the clipboard.
 
 ## Requirements
 - Windows 10/11
-- .NET 8 SDK (or Visual Studio 2022 with .NET desktop development)
+- .NET 10 SDK (or Visual Studio 2022 with .NET desktop development)
 
 ## Build and run
 From the folder containing `ClipTray.csproj`:
