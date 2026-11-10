@@ -1,0 +1,14 @@
+C:\Users\smeghead\Desktop\ClipTray2026\ClipTray\bin\Debug\net10.0-windows\ClipTray.exe
+C:\Users\smeghead\Desktop\ClipTray2026\ClipTray\bin\Debug\net10.0-windows\ClipTray.deps.json
+C:\Users\smeghead\Desktop\ClipTray2026\ClipTray\bin\Debug\net10.0-windows\ClipTray.runtimeconfig.json
+C:\Users\smeghead\Desktop\ClipTray2026\ClipTray\bin\Debug\net10.0-windows\ClipTray.dll
+C:\Users\smeghead\Desktop\ClipTray2026\ClipTray\bin\Debug\net10.0-windows\ClipTray.pdb
+C:\Users\smeghead\Desktop\ClipTray2026\ClipTray\obj\Debug\net10.0-windows\ClipTray.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\smeghead\Desktop\ClipTray2026\ClipTray\obj\Debug\net10.0-windows\ClipTray.AssemblyInfoInputs.cache
+C:\Users\smeghead\Desktop\ClipTray2026\ClipTray\obj\Debug\net10.0-windows\ClipTray.AssemblyInfo.cs
+C:\Users\smeghead\Desktop\ClipTray2026\ClipTray\obj\Debug\net10.0-windows\ClipTray.csproj.CoreCompileInputs.cache
+C:\Users\smeghead\Desktop\ClipTray2026\ClipTray\obj\Debug\net10.0-windows\ClipTray.dll
+C:\Users\smeghead\Desktop\ClipTray2026\ClipTray\obj\Debug\net10.0-windows\refint\ClipTray.dll
+C:\Users\smeghead\Desktop\ClipTray2026\ClipTray\obj\Debug\net10.0-windows\ClipTray.pdb
+C:\Users\smeghead\Desktop\ClipTray2026\ClipTray\obj\Debug\net10.0-windows\ClipTray.genruntimeconfig.cache
+C:\Users\smeghead\Desktop\ClipTray2026\ClipTray\obj\Debug\net10.0-windows\ref\ClipTray.dll
