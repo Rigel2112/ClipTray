@@ -6,6 +6,10 @@ ClipTray lets you store frequently used text snippets in organized categories an
 
 **No accounts. No cloud services. No unnecessary features.**
 
+<img width="341" height="210" alt="image" src="https://github.com/user-attachments/assets/eb9f4f9d-8085-45dd-b78d-96ad65a4c0bb" />
+<img width="906" height="573" alt="image" src="https://github.com/user-attachments/assets/9e6fe6be-939d-4849-834a-81accc861690" />
+
+
 ## Download and Installation
 
 **You do not need Visual Studio, the .NET SDK, or any programming knowledge to use ClipTray.**
@@ -68,6 +72,4 @@ No internet connection is required.
 - Built-in clip editor.
 - Persistent JSON configuration.
 - Portable, self
-<img width="341" height="210" alt="image" src="https://github.com/user-attachments/assets/eb9f4f9d-8085-45dd-b78d-96ad65a4c0bb" />
-<img width="906" height="573" alt="image" src="https://github.com/user-attachments/assets/9e6fe6be-939d-4849-834a-81accc861690" />
 
