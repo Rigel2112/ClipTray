@@ -8,6 +8,8 @@ The original description of ClipTray taken from the Windows 98 Resouce Kit Power
 "ClipTray is a small, simple program that places an icon on the System Tray. When you right-click on the icon, it brings up a menu containing titles of ClipTray Entries that are available in a central text file. Clicking on the ClipTray Entry you wish to use will place it into the Windows clipboard, ready for pasting into any program."
 
 
+My recreation is meant to remake this without adding anything else that would get in the way of it's function.  The only features added are the ability to reorder the clips and to add subclips under categories.   Everything else should almost be the same. 
+
 ClipTray lets you store frequently used text snippets in organized categories and copy them to your clipboard with just two clicks.
 
 **No accounts. No cloud services. No unnecessary features.**
