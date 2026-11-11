@@ -68,3 +68,4 @@ No internet connection is required.
 - Built-in clip editor.
 - Persistent JSON configuration.
 - Portable, self
+<img width="341" height="210" alt="image" src="https://github.com/user-attachments/assets/eb9f4f9d-8085-45dd-b78d-96ad65a4c0bb" />
