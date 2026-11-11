@@ -69,3 +69,5 @@ No internet connection is required.
 - Persistent JSON configuration.
 - Portable, self
 <img width="341" height="210" alt="image" src="https://github.com/user-attachments/assets/eb9f4f9d-8085-45dd-b78d-96ad65a4c0bb" />
+<img width="906" height="573" alt="image" src="https://github.com/user-attachments/assets/9e6fe6be-939d-4849-834a-81accc861690" />
+
