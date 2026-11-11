@@ -2,6 +2,12 @@
 
 A lightweight Windows system tray clipboard utility inspired by the original Microsoft ClipTray from the Windows XP era.
 
+
+The original description of ClipTray taken from the Windows 98 Resouce Kit Power Tools:
+
+"ClipTray is a small, simple program that places an icon on the System Tray. When you right-click on the icon, it brings up a menu containing titles of ClipTray Entries that are available in a central text file. Clicking on the ClipTray Entry you wish to use will place it into the Windows clipboard, ready for pasting into any program."
+
+
 ClipTray lets you store frequently used text snippets in organized categories and copy them to your clipboard with just two clicks.
 
 **No accounts. No cloud services. No unnecessary features.**
