@@ -1,4 +1,4 @@
-# ClipTray 2026
+# ClipTray 2112
 
 A lightweight Windows system tray clipboard utility inspired by the original Microsoft ClipTray from the Windows XP era.
 
