@@ -1,39 +1,34 @@
-# ClipTray
+# ClipTray2026
 
-Tiny Windows tray application for copying canned text snippets to the clipboard.
+A lightweight Windows tray clipboard-snippet tool with a built-in editor.
 
-## Requirements
-- Windows 10/11
-- .NET 10 SDK (or Visual Studio 2022 with .NET desktop development)
+## Build (free, with VS Code and .NET 10 SDK)
 
-## Build and run
-From the folder containing `ClipTray.csproj`:
+Open this folder in VS Code and run:
 
 ```powershell
+dotnet build
 dotnet run
 ```
 
-To publish a standalone executable (Windows x64):
+Right-click the tray icon and choose **Edit Clips...**, or double-click the icon.
+
+- Select a clip to edit its title and multiline clipboard text.
+- Select a category to rename it.
+- **+ Clip** adds a clip inside the selected category (or alongside a selected clip).
+- **+ Category** creates a category alongside the selection.
+- **Delete** removes the selected clip or category and its contents.
+- **Move Up / Move Down** changes menu order within a category.
+- **Save** writes your changes; **Close** prompts if changes aren't saved.
+
+The original JSON format is preserved (`Label`, `Text`, `Children`). Clips are stored in `%APPDATA%\ClipTray\clips.json`, exactly as in the previous version. Existing data is not replaced by the sample data.
+
+**Tip:** Back up your existing `clips.json` before trying the new editor.
+
+## Publish a standalone Windows executable
 
 ```powershell
 dotnet publish -c Release -r win-x64 --self-contained true -p:PublishSingleFile=true
 ```
 
-The EXE will be in `bin\Release\net8.0-windows\win-x64\publish\`.
-
-## Usage
-- Right-click the tray icon to select a snippet. Its text goes to the clipboard; press Ctrl+V to paste.
-- Double-click the tray icon or choose **Edit clips.json** to open the configuration in Notepad.
-- Save changes; the menu reloads whenever it is opened. No restart necessary.
-- **Exit** stops the application.
-
-## Configuration
-On first run, sample entries are created at `%APPDATA%\ClipTray\clips.json`.
-
-Each entry has a `Label` and either `Text` (for a snippet) or `Children` (for a submenu).
-JSON newline escapes (`\n`) are supported. JSON must remain valid.
-
-## Notes
-- No automatic paste or keystroke injection.
-- Do not store passwords or sensitive secrets in clipboard snippets.
-- Uses the built-in Windows information icon; you can replace it with a custom icon later.
+The app is Windows-only. It was source-reviewed but not compiled on Windows in the authoring environment; build and test on your own PC.

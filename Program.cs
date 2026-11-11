@@ -1,4 +1,3 @@
-using System.Diagnostics;
 using System.Drawing;
 using System.Text.Json;
 using System.Windows.Forms;
@@ -39,7 +38,7 @@ internal sealed class TrayApp : ApplicationContext
             Visible = true
         };
         menu.Opening += (_, _) => RebuildMenu();
-        icon.DoubleClick += (_, _) => OpenConfig();
+        icon.DoubleClick += (_, _) => OpenEditor();
         EnsureConfig();
         RebuildMenu();
     }
@@ -76,7 +75,7 @@ internal sealed class TrayApp : ApplicationContext
                 (_, _) => MessageBox.Show(ex.Message, "ClipTray", MessageBoxButtons.OK, MessageBoxIcon.Error)));
         }
         menu.Items.Add(new ToolStripSeparator());
-        menu.Items.Add("Edit clips.json", null, (_, _) => OpenConfig());
+        menu.Items.Add("Edit Clips...", null, (_, _) => OpenEditor());
         menu.Items.Add("Reload", null, (_, _) => RebuildMenu());
         menu.Items.Add("Exit", null, (_, _) => ExitThread());
     }
@@ -118,15 +117,20 @@ internal sealed class TrayApp : ApplicationContext
         MessageBox.Show("The clipboard is currently busy. Please try again.", "ClipTray");
     }
 
-    private void OpenConfig()
+    private EditorForm? editor;
+
+    private void OpenEditor()
     {
+        if (editor is { IsDisposed: false }) { editor.Activate(); return; }
         try
         {
-            Process.Start(new ProcessStartInfo("notepad.exe", $"\"{configPath}\"") { UseShellExecute = true });
+            editor = new EditorForm(configPath, RebuildMenu);
+            editor.FormClosed += (_, _) => editor = null;
+            editor.Show();
         }
         catch (Exception ex)
         {
-            MessageBox.Show(ex.Message, "ClipTray", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            MessageBox.Show(ex.Message, "ClipTray editor", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
     }
 
